@@ -1,0 +1,137 @@
+Backport PR #7781
+---------
+
+**Commit 1:**
+[Notifier] Added a custom notify function which allows complete control over notifications
+
+* Original sha: 33bf38f325347e4e4a43ddc2c7d4644282417a87
+* Authored by Khalah Jones Golden <khalah@elastic.co> on 2016-07-07T20:40:08Z
+* Committed by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T19:08:49Z
+
+**Commit 2:**
+custom notifications: use `text` as property for action button label
+
+* Original sha: 3c42f2d00ec582fbfc995d8fe6435583691fb7de
+* Authored by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-20T22:10:53Z
+
+**Commit 3:**
+remove distinction between content and markdown
+
+just run all content through the markdown parser, and add margin to
+alight text correctly
+
+* Original sha: 864cf9d636156f812d979abcea3ebbaaa8b3c39f
+* Authored by Joe Fleming <joe.fleming@gmail.com> on 2016-07-25T21:58:11Z
+* Committed by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T19:08:49Z
+
+**Commit 4:**
+fix timeout starting at 0 bug
+
+* Original sha: 702c09a69ccd9bf90e3d38e839f5ddc4c1021c7a
+* Authored by Joe Fleming <joe.fleming@gmail.com> on 2016-07-25T22:11:04Z
+* Committed by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T19:08:49Z
+
+**Commit 5:**
+allow 0 to be used to disable timeout
+
+* Original sha: eeeb94e107cd397369cdd6b3569211f1e318076b
+* Authored by Joe Fleming <joe.fleming@gmail.com> on 2016-07-25T22:12:06Z
+* Committed by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T19:08:49Z
+
+**Commit 6:**
+allow property overrides on helper methods
+
+* Original sha: b0584ef242137ded72426a5e3ca050899f2c76e5
+* Authored by Joe Fleming <joe.fleming@gmail.com> on 2016-07-25T22:46:22Z
+* Committed by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T19:08:49Z
+
+**Commit 7:**
+make custom notify api closer to other helper apis
+
+* Original sha: 932751a5be14971009346fd4dd539ca39f64e6a6
+* Authored by Joe Fleming <joe.fleming@gmail.com> on 2016-07-25T22:54:56Z
+* Committed by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T19:08:49Z
+
+**Commit 8:**
+update custom notification tests
+
+* Original sha: 7055f6c0e84d5347a7445ed3aef847753ba03a26
+* Authored by Joe Fleming <joe.fleming@gmail.com> on 2016-07-25T22:57:21Z
+* Committed by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T19:08:49Z
+
+**Commit 9:**
+punch up the tests
+
+check value types, more tests with less concerns, clean up notifications after each test
+
+* Original sha: 47edbfd637e233d134289d81b947194e60443507
+* Authored by Joe Fleming <joe.fleming@gmail.com> on 2016-07-26T00:12:29Z
+* Committed by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T19:08:49Z
+
+**Commit 10:**
+fix issue with custom notification handling
+
+* Original sha: 507429fbb391e9c203a0225d739e7a68998ecb60
+* Authored by Joe Fleming <joe.fleming@gmail.com> on 2016-07-26T00:12:46Z
+* Committed by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T19:08:49Z
+
+**Commit 11:**
+update the docblock
+
+* Original sha: a9a0362d97faa713176a6bca9226ef4e352bdf51
+* Authored by Joe Fleming <joe.fleming@gmail.com> on 2016-07-26T00:19:57Z
+* Committed by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T19:08:49Z
+
+**Commit 12:**
+Custom notification: throw error if config object is invalid
+
+* Original sha: d138de1507a6396010fca4ef9ba1e387bf876bd3
+* Authored by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T21:38:39Z
+
+**Commit 13:**
+Notifier Config: move overridableOptions to higher level
+
+* Original sha: 3ccde29408d299d9387fe7971182ef38501bae59
+* Authored by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T22:59:29Z
+
+**Commit 14:**
+switch order of negative/postive condition blocks
+
+* Original sha: 7ea3eeee5584730f2e862a0ee026f9191c693e48
+* Authored by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T23:12:53Z
+
+**Commit 15:**
+remove unecessary ng-if
+
+* Original sha: 33c41e283e19dbd9b63870eccd127afefaa399fc
+* Authored by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T23:21:13Z
+
+**Commit 16:**
+remove limit of number of actions
+
+* Original sha: 259c4802ee9b5a149d9877d56e028fde57b81c16
+* Authored by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T23:27:11Z
+
+**Commit 17:**
+custom notifier dynamic lifetime based on type
+
+* Original sha: 03aa6b8972e68651e84be9685f2eadf0189bb648
+* Authored by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-27T23:49:39Z
+
+**Commit 18:**
+test cleanup per feedback
+
+* Original sha: dbea052968eed55dca132ba228b495e56dbb61bc
+* Authored by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-28T00:20:44Z
+
+**Commit 19:**
+allow passing of `type: ‘error’`
+
+* Original sha: 0c7c3391707e27f07889f15a8d93a4a233663d2e
+* Authored by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-28T01:55:55Z
+
+**Commit 20:**
+add tests for latest enhancements
+
+* Original sha: 7e99d6cfe74e63cc83e923ff31927d671bb76fc8
+* Authored by Timothy Sullivan <tsullivan@elastic.co> on 2016-07-28T23:10:48Z
